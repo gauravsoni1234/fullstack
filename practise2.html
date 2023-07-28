@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        @keyframes slider1 {
+            0% {
+                transform: translate(0vw);
+            }
+
+            100% {
+                transform: translate(74vw);
+            }
+        }
+
+        @keyframes slider2 {
+            0% {
+                transform: translate(-33vw);
+            }
+
+            100% {
+                transform: translate(50vw);
+            }
+        }
+
+        .container {
+            background-color: red;
+            height: 100vw;
+        }
+
+        header {
+            background-color: black;
+            height: 60px;
+        }
+
+        .slider {
+            background-color: aqua;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+        }
+
+        img {
+            width: 80vw;
+            height: 60vh;
+            display: block;
+            margin: auto;
+        }
+
+        .img1 {
+            transform: translate(-33vw);
+            animation: slider1 1s 2s forwards;
+        }
+
+        .img2 {
+            transform: translate(0vw);
+            animation: slider1 1s 2s forwards;
+        }
+
+        .img3 {
+            transform: translate(33vw);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header></header>
+        <main>
+            <div class="slider">
+                <img class="img1" src="images/sliderimg1.webp">
+                <img class="img2" src="images/sliderimg2.png">
+                <img class="img3" src="images/road.png">
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
