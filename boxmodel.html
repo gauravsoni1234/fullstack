@@ -5,11 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .image {
+            border: red solid 5px;
+            margin: 25px;
+            width: 250px;
+            padding: 35px;
+            border-radius: 170px;
+        }
+
+        .image:hover {
+            transform: scale(120%) rotate(50deg);
+        }
+
+        .Button {
+            background-color: red;
+            font-size: 35px;
+            color: white;
+            font-weight: bold;
+            border-color: red;
+            padding: 15px;
+            width: 200px;
+
+        }
+
+        .Button:hover {
+            background-color: black;
+            color: greenyellow;
+            transition: width 5s;
+            width: 300px;
+        }
+    </style>
 </head>
 
 <body>
-    <img src="images/watch.jpg"
-        style="border: red solid 5px; margin: 25px; width: 250px; padding: 35px; border-radius: 170px;">
+    <img src="images/watch.jpg" class="image">
+
+    <span>
+        <a href="https://www.google.com"><button class="Button">Buy Now</button></a>
+    </span><br><br>
+
 </body>
 
 </html>
